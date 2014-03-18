@@ -11,10 +11,14 @@
     $ git init
     $ git add README.md # README.mdに何か追記する。
     $ git commit -m "first commit"
+    $ git push origin master # masterブランチをGithubにプッシュ
 ### 新ブランチの作成
-    $ git checkout -b new1 # 新ブランチを作成して、チェックアウトする
+    $ git checkout -b new1 # 新ブランチを作成して、new1をチェックアウトする
     $ git branch # new1ブランチが新たに作られていることを確認
     README.mdを変更する
     $ git commit -am "add comments to README"
-### リポジトリをGithubにプッシュして共有する
-    $ git push --all
+### 新規作成したリポジトリをGithubにプッシュして共有する
+    $ git push origin news
+### Githubでプルリクエストし、masterブランチにマージする
+    新ブランチをプッシュした人がプルリクエストを行う
+    適切な人が新ブランチを検証して、問題なければ、masterブランチにマージする
