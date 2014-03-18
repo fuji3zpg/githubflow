@@ -11,7 +11,10 @@
     $ git init
     $ git add README.md # README.mdに何か追記する。
     $ git commit -m "first commit"
+### 新ブランチの作成
     $ git checkout -b new1 # 新ブランチを作成して、チェックアウトする
     $ git branch # new1ブランチが新たに作られていることを確認
+    README.mdを変更する
+    $ git commit -am "add comments to README"
 ### リポジトリをGithubにプッシュして共有する
     $ git push --all
